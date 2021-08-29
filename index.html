@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index follow">
+    <meta name="description" content="Landing Page for the Art Festival 2021">
+    <meta name="keywords" content="Art Festival, Art Festival UET KSK, Art Festival Tedx, Art fest'21, Art Fest 2021">
+    <meta name="author" content="Muhammad Haroon Latif">
+    <title>Art Fest'21</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        * {
+
+
+            color: rgba(1, 26, 39, 1);
+
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-image: url(./Images/bg.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            /* position: fixed;
+    top: 0px;
+    left: 0px; */
+
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #social-bar {
+            width: 10vw;
+            justify-content: space-around;
+
+        }
+
+        .main-heading {
+            color: #f0810f;
+            text-shadow:
+                0 0 7px #f7e5d3,
+                0 0 10px #f7e5d3,
+                0 0 21px #f7e5d3,
+                0 0 42px #f0810f,
+                0 0 82px #f0810f,
+                0 0 92px #f0810f,
+                0 0 102px #f0810f,
+                0 0 151px #f0810f;
+            animation: flicker 1.0s infinite alternate;
+            color: #f7e5d3
+        }
+
+        @keyframes flicker {
+
+            0%,
+            18%,
+            22%,
+            25%,
+            53%,
+            57%,
+            100% {
+
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #f0810f,
+                    0 0 80px #f0810f,
+                    0 0 90px #f0810f,
+                    0 0 100px #f0810f,
+                    0 0 150px #f0810f;
+
+            }
+
+            20%,
+            24%,
+            55% {
+                text-shadow: none;
+            }
+        }
+
+        header {
+            /* border: 2px solid white; */
+            margin: 0px;
+            background-color: rgba(1, 26, 39, 0.8);
+        }
+        /* .container{
+
+        } */
+
+        #info-bar {
+           
+            width: 300px;
+            padding: 2px 8px;
+            /* margin: 4vw 0vw 0vw 8vw ; */
+           /* margin: 20px 0px; */
+            border: 2px dotted #f0810f;
+            border-radius: 10px;
+        }
+        .divcontainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+            margin: 20px 0px;
+
+        }
+
+        .label {
+            display: block;
+            text-align: center;
+        }
+
+        .input {
+            width: 30vw;
+
+        }
+
+        .form {
+            border: 2px dotted #f0810f;
+            border-radius: 10px;
+            padding: 20px 8px;
+           
+            width: 400px;
+            /* margin: 4vw 8vw 0vw 0vw; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #second-heading {
+            text-align: center;
+        }
+        .videocontainer{
+            margin: 20px -8px;
+        }
+        .sponsor{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 1px 5px;
+        }
+        .sponsorpic{
+            width: 300px;
+    height: auto;
+    margin: 20px;
+
+        }
+        #head2{
+            text-align: center;
+        }
+        #footer{
+            clear: both;
+            font-family: 'Lobster', cursive;
+            font-size: 20px;
+            margin: 10px 15px;
+            padding: 10px;
+            
+        }
+        .btn{
+            background-color:#f0810f ;
+                color:rgba(1, 26, 39, 1);
+                padding: 3px;
+                margin: 4px;
+                border-radius: 6px;
+                cursor: pointer;
+                
+        }
+        .formessentials{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#useremail{
+    width: 50vw;
+}
+        @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+   {
+      /* #logo-box{
+display: none;
+visibility: hidden;
+      } */
+      /* .mobile-header{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+
+      } */
+      /* .container{
+         justify-content: space-evenly;
+      } */
+      #social-bar{
+          justify-content: space-evenly;
+          width: 15vw;
+      }
+      .form{
+          width: 350px;
+      }
+      #info-bar{
+          width: 350px;
+      }
+
+      
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  /* and (-webkit-min-device-pixel-ratio: 2) { */
+    {
+      /* .small-box{
+          display: hidden;
+
+      } */
+.form{
+    width: 300px;
+    margin-top: 10px;
+}
+.sponsor{
+    flex-wrap: wrap;
+}
+#social-bar{
+    display: none;
+}
+.container{
+    justify-content: space-around;
+}
+#useremail{
+    width: 80vw;
+}
+}
+#footer {
+            /* border: 2px solid white; */
+            margin: 0px;
+            background-color: rgba(1, 26, 39, 0.8);
+            
+        }
+        .footer{
+            color: #f0810f;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" id="header">
+        <div class="small-box" id="logo-box">
+            <img src="./Images/Favicon.png" alt="">
+        </div>
+        <!-- <div class="mobile-header"> -->
+
+            <h1 class="main-heading">Art Festival 2021</h1>
+            <div class="container" id="social-bar">
+                <a href="facebook.com">
+                    <img src="./Images/iconmonstr-facebook-1-24.png" alt="">
+                </a>
+                <a href="Instagram.com">
+                    <img src="./Images/iconmonstr-instagram-11-24.png" alt="">
+                </a>
+                <a href="Twitter.com">
+                    <img src="./Images/iconmonstr-twitter-1-24.png" alt="">
+                </a>
+        <!-- </div> -->
+        </div>
+    </header>
+    <div class="divcontainer">
+    <div id="info-bar">
+        <h2 id="secondary-heading">Breif</h2>
+        <p id="info">
+            TEDx UET New Campus is going to host Biggest Online Art Event in the history of UET New Campus. 150+
+            Universities will be approached and requested to participate in event.This event will surely be a hallmark
+            of utmost professionalism and creativity.
+        </p>
+    </div>
+
+    <div class="form" id="form-container">
+        <h2 id="second-heading"> Get Yourself Registered</h2>
+        <form action="noaction.php">
+            <label for="NAME" class="label">Name:</label>
+            <input class="input" type="text" name="NAME" id="NAME" placeholder="Enter your Name">
+            <label for="EMAIL" class="label">E-Mail</label>
+            <input class="input" type="text" name="EMAIL" id="EMAIL" placeholder="Enter your E-mail">
+            <label for="number" class="label">WhatsApp No.</label>
+            <input class="input" type="text" name="number" id="number" placeholder="Active Phone Number">
+            <label for="part" class="label">Participate In</label>
+            <select class="input" name="part" id="part">
+                <option value="Calligrphy">Calligrphy</option>
+                <option value="Naat">Naat</option>
+                <option value="Photography">Photography</option>
+                <option value="Dancing">Dancing</option>
+                <option value="Painting">Painting</option>
+                <option value="Singing">Singing</option>
+                <option value="Dramatics">Dramatics</option>
+                <option value="Gaming">Gaming</option>
+
+            </select>
+
+        </form>
+    </div>
+</div>
+<section class="videocontainer">
+    <video src="./Videos/WhatsApp Video 2021-08-21 at 2.28.38 PM.mp4"  autoplay width="100%" height="auto"></video>
+
+</section>
+<section id="sponsors">
+    <h2 id="head2">Our Sponsors</h2>
+<div class="sponsor">
+    <img src="./Images/sp.png" alt="Zameen.com" class="sponsorpic">
+</div>
+<div class="sponsor">
+    <img src="./Images/sp2.png" alt="sponsor" class="sponsorpic">
+    <img src="./Images/sp3.png" alt="sponsor" class="sponsorpic">
+</div>
+
+</section>
+<footer id="footer">
+    <form style="text-align: center;" action="haroon.php" class="Subscription-form">
+        <h3 class="footer">Do you want to subscribe?</h3>
+        <p style="color: #f0810f; text-align: center;">Your E-mail</p>
+        <input id="useremail" name="useremail" type="email" >
+        <input type="submit" value="Count me IN" class="btn">
+    </div>
+    </form>
+    <p style="text-align: center;" class="footer">
+        This page is just an event page lovingly created for TEDx UET Lahore New Campus. You may follow us on social media platforms to keep track of the activities by clicking on the links provided in the header. See you on the other side.
+    </p>
+    
+</footer>
+</body>
+
+</html>
